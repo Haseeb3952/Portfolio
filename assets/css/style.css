@@ -1,0 +1,718 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --green: #20c997;
+  --dark: #fafafa;
+}
+
+a {
+  text-decoration: none;
+}
+
+.profile-pic a img {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border: 6px solid #303238;
+}
+
+.my-name h4 {
+  font-weight: 500;
+}
+
+.nav-links ul li {
+  list-style-type: none;
+  padding: 9px 0px;
+}
+
+.nav-links ul li a {
+  color: var(--dark);
+  transition: 0.4s;
+}
+
+.nav-links ul li a:hover {
+  color: var(--green);
+}
+
+.side_bar {
+  min-height: 100vh !important;
+  overflow-y: auto;
+  background-color: #111418;
+}
+
+.side-navbar {
+  height: 100vh;
+}
+
+.scroll-div {
+  height: 100vh;
+  overflow: auto;
+}
+
+.social a i {
+  color: var(--dark);
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.fb i:hover {
+  color: #3b5998;
+}
+
+.ig i:hover {
+  color: #f03f33;
+}
+
+.tw i:hover {
+  color: #00acee;
+}
+
+.li i:hover {
+  color: #0a66c2;
+}
+
+.gh i:hover {
+  color: red;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fafafa;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #20c997;
+}
+
+/* Home Section CSS */
+
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background: linear-gradient(84deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("/assets/images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+#text {
+  font-weight: 800;
+  font-size: 70px;
+  color: var(--white);
+}
+
+.home-location p {
+  font-size: 20px;
+  color: var(--white);
+}
+
+.btn-hire-me {
+  background-color: transparent;
+  border: 2px solid #20c997;
+  color: var(--green);
+  transition: 0.4s;
+}
+
+.btn-hire-me:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+#go-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--blue-color);
+  transition: 0.4s !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  z-index: 99;
+}
+
+#go-top-btn i {
+  color: #fff;
+  font-size: 25px;
+}
+
+/* About Me CSS */
+
+.about-section {
+  background-color: #212529;
+}
+
+.about-me-heading h1 {
+  font-size: 140px;
+  font-weight: 900;
+  color: #282d31;
+  position: relative;
+}
+
+.know-me-more h1 {
+  font-size: 45px;
+  font-weight: 900;
+  color: var(--white);
+  position: absolute;
+  bottom: 40%;
+  left: 34%;
+}
+
+.border-right {
+  border-right: 1px solid #20c997;
+}
+
+.green-text {
+  color: var(--green);
+}
+
+.green-text:hover {
+  color: var(--green);
+}
+
+.about-me-para {
+  color: hsla(0, 0%, 100%, 0.5) !important;
+}
+
+.gray-text {
+  color: hsla(0, 0%, 100%, 0.5) !important;
+}
+
+.btn-download-cv {
+  background-color: var(--green);
+  transition: 0.5s;
+}
+
+.btn-download-cv:hover {
+  background-color: #1baa80;
+}
+
+/* Services Section CSS */
+
+.services-section {
+  background-color: #343a40;
+  max-height: max-content;
+}
+
+.services-heading h1 {
+  font-size: 120px;
+  font-weight: 900;
+  color: #3e4449;
+  position: relative;
+}
+
+.what-i-do h1 {
+  font-size: 45px;
+  font-weight: 900;
+  color: var(--white);
+  position: absolute;
+  bottom: 37%;
+  left: 39%;
+}
+
+/* Summary Section CSS */
+
+.summary-section {
+  background-color: #212529;
+  max-height: max-content;
+}
+
+.summary-heading h1 {
+  font-size: 120px;
+  font-weight: 900;
+  color: #3e4449;
+  position: relative;
+}
+
+.resume h1 {
+  font-size: 45px;
+  font-weight: 900;
+  color: var(--white);
+  position: absolute;
+  bottom: 37%;
+  left: 42.3%;
+}
+
+.period-of-time {
+  background-color: var(--green);
+}
+
+.period-of-time p {
+  font-size: 15px;
+}
+
+.experience {
+  background-color: #111418;
+}
+
+.skills-line {
+  background-color: #000;
+  height: 9px;
+  position: relative;
+}
+
+.skills-green-line {
+  position: absolute;
+  height: 9px;
+  background-color: var(--green);
+  width: 65%;
+}
+
+.html-green-line {
+  position: absolute;
+  height: 9px;
+  background-color: var(--green);
+  width: 90%;
+}
+
+.bootstrap-skill-line {
+  position: absolute;
+  height: 9px;
+  background-color: var(--green);
+  width: 95%;
+}
+
+.js-skill-line {
+  position: absolute;
+  height: 9px;
+  background-color: var(--green);
+  width: 80%;
+}
+
+.react-skill-line {
+  position: absolute;
+  height: 9px;
+  background-color: var(--green);
+  width: 75%;
+}
+
+.angular-skill-line {
+  position: absolute;
+  height: 9px;
+  background-color: var(--green);
+  width: 60%;
+}
+
+.btn-cv {
+  border: 2px solid hsla(0, 0%, 100%, 0.5);
+  transition: 0.7s;
+}
+
+.btn-cv:hover {
+  background-color: #6c757d !important;
+  border: 2px solid #6c757d;
+  color: var(--white) !important;
+}
+
+/* portfolio-section CSS */
+
+.portfolio-section {
+  background-color: #343a40;
+  max-height: max-content;
+}
+
+.portfolio-heading h1 {
+  font-size: 150px;
+  font-weight: 900;
+  color: #3e4449;
+  position: relative;
+}
+
+.my-work h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--white);
+  position: absolute;
+  bottom: 39%;
+  left: 39.6%;
+}
+
+/* Nav Tabs */
+
+.project-01 img {
+  border-radius: 7px;
+}
+
+.project img {
+  transition: 0.5s;
+}
+
+.project-01:hover .project img {
+  transform: scale(1.05);
+}
+
+.my-projects {
+  overflow: hidden;
+}
+
+.project_title {
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.4s;
+}
+
+.project-01:hover .project_title {
+  opacity: 1;
+}
+
+.project-01:hover .project img {
+  opacity: 0.1;
+}
+
+.nav-pills .nav-link {
+  background: 0 0;
+  border: 0;
+  border-radius: 0.25rem;
+  color: var(--white);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: transparent !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link :active {
+  color: var(--green);
+  border-bottom: 2px solid #1baa80;
+}
+
+/* Testimonials Section CSS */
+
+.testimonial-section {
+  background-color: #212529;
+  max-height: max-content;
+}
+
+.testimonial-heading h1 {
+  font-size: 130px;
+  font-weight: 900;
+  color: #282d31;
+  position: relative;
+}
+
+/* 
+.green-line {
+  position: relative;
+  display: inline-block;
+}
+
+.green-line::after {
+  content: "";
+  position: absolute;
+  bottom: 2%;
+  left: 20%;
+  width: 50%;
+  height: 3px;
+  background-color: var(--green);
+} */
+
+.client-speak h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--white);
+  position: absolute;
+  bottom: 39%;
+  left: 39%;
+}
+
+/* .client-speak h1::after {
+  content: "";
+  position: absolute;
+  bottom: 2%;
+  left: 20%;
+  width: 50%;
+  height: 3px;
+  background-color: var(--green);
+} */
+
+.testimonial-photo {
+  height: 70px;
+  width: 70px;
+}
+
+.test-name {
+  display: grid;
+  grid-template-columns: 70px auto;
+}
+
+.testimonial-photo img {
+  height: 100%;
+  width: 100%;
+}
+
+.item {
+  background-color: #000;
+}
+
+/* Contact Section CSS */
+
+.contact-section {
+  background-color: #343a40;
+  max-height: max-content;
+}
+
+.contact-heading h1 {
+  font-size: 130px;
+  font-weight: 900;
+  color: #3e4449;
+  position: relative;
+}
+
+.get-in-touch h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--white);
+  position: absolute;
+  bottom: 39%;
+  left: 39.6%;
+}
+
+.address-text {
+  color: #dee3e4 !important;
+}
+
+.address {
+  font-size: 20px;
+  color: #dee3e4;
+}
+
+.dialer i {
+  color: var(--green);
+}
+
+input {
+  background-color: #232a31 !important;
+  border-color: #232a31 !important;
+}
+
+input:focus {
+  border-color: #80bdff !important;
+  color: var(--white);
+}
+
+input:active {
+  color: var(--white) !important;
+}
+
+textarea {
+  background-color: #232a31 !important;
+  border-color: #232a31 !important;
+  color: #fff;
+}
+
+textarea:focus {
+  border-color: #80bdff !important;
+}
+
+.btn-send-message {
+  background-color: #20c997;
+  font-weight: 500;
+  transition: 0.7s;
+}
+
+textarea.form-control {
+  color: white !important;
+}
+
+.rounded {
+  color: white !important;
+}
+
+.btn-send-message:hover {
+  background-color: #1baa80;
+}
+
+.footer-section {
+  background-color: #212529;
+}
+
+.btn-offcanvas {
+  display: none;
+}
+
+.mobile-view {
+  display: none;
+}
+
+.closing_button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn-close-tab {
+  background-color: #111418;
+}
+
+.btn-close-ph {
+  background-color: #000;
+}
+
+/************************************************* Tablet View ********************************************/
+
+@media screen and (max-width: 1023.9px) {
+  .my_profile {
+    display: none;
+  }
+
+  .btn-offcanvas {
+    display: block;
+  }
+
+  .about-me-heading h1 {
+    font-size: 133px;
+  }
+
+  .know-me-more h1 {
+    font-size: 53px;
+    left: 25%;
+    margin: 0%;
+  }
+  .portfolio-heading h1 {
+    font-size: 130px;
+  }
+
+  .what-i-do h1 {
+    font-size: 50px;
+    left: 30%;
+  }
+  .resume h1 {
+    font-size: 55px;
+    left: 35%;
+  }
+
+  .my-work h1 {
+    font-size: 70px;
+    left: 31%;
+    margin: 0%;
+  }
+
+  .testimonial-heading h1 {
+    font-size: 110px;
+  }
+  .client-speak h1 {
+    font-size: 45px;
+    left: 32%;
+  }
+
+  .get-in-touch h1 {
+    font-size: 55px;
+    left: 30%;
+  }
+  .mobile-view {
+    display: block;
+    background-color: #000;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+
+/************************************************* Mobile View ********************************************/
+
+@media screen and (max-width: 767.9px) {
+  .home-section {
+    height: 70vh;
+  }
+
+  #text {
+    font-size: 35px;
+  }
+
+  .about-me-heading h1 {
+    font-size: 53px !important;
+  }
+
+  .know-me-more h1 {
+    font-size: 23px !important;
+    left: 25%m !important;
+  }
+
+  .services-heading h1 {
+    font-size: 65px !important;
+  }
+
+  .what-i-do h1 {
+    font-size: 30px !important;
+    left: 26% !important;
+  }
+
+  .border-right {
+    border-right: none;
+  }
+
+  .services-content {
+    font-size: 15px !important;
+  }
+
+  .summary-heading h1 {
+    font-size: 65px !important;
+  }
+
+  .resume h1 {
+    font-size: 35px !important;
+    left: 30% !important;
+  }
+
+  .portfolio-heading h1 {
+    font-size: 60px !important;
+  }
+
+  .my-work h1 {
+    font-size: 30px !important;
+    left: 31% !important;
+  }
+
+  .testimonial-heading h1 {
+    font-size: 50px !important;
+  }
+
+  .client-speak h1 {
+    font-size: 25px !important;
+    left: 28% !important;
+  }
+
+  .contact-heading h1 {
+    font-size: 60px !important;
+  }
+
+  .get-in-touch h1 {
+    font-size: 25px !important;
+    left: 30% !important;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+}
